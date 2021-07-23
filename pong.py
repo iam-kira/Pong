@@ -1,4 +1,4 @@
-# Hello Everyone
+# Hello lad
 
 import turtle
 
