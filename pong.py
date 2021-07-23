@@ -1,12 +1,21 @@
 # Hello lad
 
 import turtle
+import random
+
+
+turtle.colormode(255)
+
+R = random.randint(0,255)
+G = random.randint(0,255)
+B = random.randint(0,255)
+color = (R,G,B)
 
 t=turtle
 
 wn = t.Screen()
 wn.title("Pong")
-wn.bgcolor("black")
+wn.bgcolor(color)
 wn.setup(width=800,height=600)
 wn.tracer(0)
 
@@ -112,8 +121,13 @@ while True:
         ball.dx *= -1
         score_a += 1
         pen.clear()
-        
         pen.write("Player A: {} || Player B: {}".format(score_a, score_b), align="center", font=("Courier",20,"normal"))
+        wn.bgcolor(color)
+        R = random.randint(1,255)
+        G  = random.randint(1,255)
+        B = random.randint(1,255)
+        color = (R,G,B)
+        
         
     if ball.xcor() < -390:
         ball.goto(0,0)
@@ -121,6 +135,13 @@ while True:
         score_b +=1
         pen.clear()
         pen.write("Player A: {} || Player B: {}".format(score_a, score_b), align="center", font=("Courier",20,"normal"))
+        wn.bgcolor(color)
+        R = random.randint(1,255)
+        G  = random.randint(1,255)
+        B = random.randint(1,255)
+        color = (R,G,B)
+        
+        
         
         
     # Collision
