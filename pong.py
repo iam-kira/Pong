@@ -61,7 +61,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0,260)
-pen.write(" Player A can use 'W' and 'S' and for Player B Arrow UP and Down.", align="center", font=("Courier",14,"normal"))
+pen.write(" \n Player A can use 'W' and 'S' and for Player B Arrow UP and Down. \n ~VIJAY BIRADAR", align="center", font=("Courier",14,"normal"))
 
 # Function
 
