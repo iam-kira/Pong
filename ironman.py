@@ -1,5 +1,5 @@
 # Using pyhton turtle library
-~Vijay Biradar
+# ~Vijay Biradar
 
 import turtle
 import time
